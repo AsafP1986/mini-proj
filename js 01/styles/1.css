@@ -1,0 +1,16 @@
+h4{
+    text-align: center;
+    text-decoration: underline;
+    color: chocolate;
+    font-size: 32px;
+}
+h1 {
+    color: rgb(69, 66, 209);
+    text-orientation: sideways;
+}
+p {
+
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+}

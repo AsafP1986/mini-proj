@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Targil 2</title>
+</head>
+<body>
+
+    <h1 style="direction:rtl;"> קלוט מילה שמכילה בתוכה מילה אחרת. קלוט גם את המיקום של האות 
+            ההתחלתית של המילה הפנימית ואת אורך המילה . הצג את המילה החדשה למסך </h1>  
+            
+    <h2>please insert a word that contains another word inside:</h2>
+    <input type="text" name="bigword" id="bigWord"><br><br>
+    <h2>please state the start location of your new word:</h2>
+    <input type="number" name="startLoc" id="startLoc"><br><br>
+    <h2>please state the length of your new word:</h2>
+    <input type="number" name="nWordLenght" id="nWordLenght"><br><br>
+    <button id="displayNewWord" onclick="displayNewWord()">display your inner word</button>
+    <p id="output"></p>
+
+<script>
+
+    function displayNewWord() {
+
+        var bigWord= document.getElementById('bigWord').value;
+        var x = parseInt(document.getElementById('startLoc').value) -1 ;
+        var y = x + parseInt(document.getElementById('nWordLenght').value);
+        var newWord = bigWord.substring(x,y);
+
+        document.getElementById('output').innerText = newWord;
+
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid" style="margin-top: 50px">
+    <div class="container-fluid border border-primary" style="margin-top: 50px">      
+      <div class="row">
+        <div class="col-sm-6 col-xs-6">
+          <div class="form-group">
+            <label for="usr">please insert a number between 1-300:</label>
+            <input type="number" class="form-control" id="input" min="1" max="300">
+          </div> <br>
+          <button type="button" class="btn btn-success btn-lg btn-block" id="myBtn" onclick="sendNumber()">press to
+            send the number</button><br>
+        </div>
+        <div class="col-sm-6 col-xs-6">
+          <!--<h1 class="display-1" class="text-center" id="output"></h1>-->
+          <p style="border-style: solid ; height: 100% ; font-size:500%;" class="border border-primary text-center">
+            <h1 class="display-1" class="text-center" id="output"></h1>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/myscripts.js"></script>
+
+</body>
+
+
+</html>

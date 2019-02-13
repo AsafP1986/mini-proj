@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Work 06/02/2019</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myCss.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <!-- start caruselle container-->
+    <div id= "carusellContainer" class="container-fluid border border-primary">
+        <div id="upRow" class="row">
+            <div class="col-sm-12 border border-primary">
+                <!--copied carusele-->
+                <!--start Carousel Wrapper-->
+                <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+                    <!--start Slides-->
+                    <div id="carousel-inner" class="carousel-inner" role="listbox">
+                        
+                    </div>
+                    <!-- end Slides-->
+                    <!--start Controls-->
+                    <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <!--end Controls-->
+                    <ol id="carusele-thumb" class="carousel-indicators">
+                        
+                    </ol>
+                </div>
+                <!--end Carousel Wrapper-->
+            </div>
+        </div>
+    </div>
+    <!-- end caruselle container-->
+    <!-- start devied to 2 container container-->
+    <div class="container-fluid" style="margin-top: 50px">
+        <div class="row">
+            <!-- start left side: input URL & execution Btn-->
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="usr">please insert an URL address of the picture you want to import:</label>
+                    <input type="url" class="form-control" id="input" onkeyup="exeWithEnter(event)">
+                </div> <br>
+                <button type="button" class="btn btn-success btn-lg btn-block" id="myBtn" onclick="importImg()">press
+                    to import the image</button><br>
+                <button type="button" class="btn btn-success btn-lg btn-block" id="myBtn" onclick="newCaruselleItem()">press
+                            to insert the image to gallery</button><br>
+            </div>
+            <!-- end left side: input URL & execution Btn-->
+            <!-- start right side: gallery-->
+            <div class="col-sm-6">
+                <p id="outputpara" class="border border-primary text-center container-fluid"></p>
+            </div>
+             <!--end right side: gallery-->
+        </div>
+
+    </div>
+    <!-- end devied to 2 container container-->
+    <script src="js/homeWork060220119.js"></script>
+
+</body>
+</html>

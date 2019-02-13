@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>clock</title>
+</head>
+<body>
+
+    <h1 style="text-align: center ; font-size: 100px"></h1>
+
+    <script>
+
+    var clock = new Date();
+    var h =  checkTime(clock.getHours());
+    var m = checkTime(clock.getMinutes());
+    var s = checkTime(clock.getSeconds());
+    
+
+  document.getElementsByTagName('h1')[0].innerHTML = h + ":" + m + ":" + s;
+  
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+    
+
+
+    </script>
+</body>
+</html>

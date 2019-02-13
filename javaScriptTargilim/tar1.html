@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Targil 1</title>
+</head>
+<body>
+
+    <h1 style="direction:rtl;">קלוט מחרוזת שמייצגת אי- מייל, וודאו שיש רק סימן @ אחד</h1>
+ 
+    <h2>please insert your email:</h2>
+    <input type="text" name="email" id="eMailAd"><br><br>
+    <button id="valMailBt" onclick="validateEmail()">validate your mail</button>
+    <p id="output"></p>
+
+<script>
+
+    function validateEmail() {
+
+        var mail=document.getElementById('eMailAd').value;
+        console.log(mail); 
+        console.log(typeof mail);
+        if ((mail.indexOf('@') == mail.lastIndexOf('@')) && (mail.indexOf('@') != -1)) {
+            
+            document.getElementById('output').innerHTML="<a href='http://www.gmail.com'>yor mail is ok.you can go to site</a>";
+        }else {
+
+            document.getElementById('output').innerHTML="the mail you entered is not valid";
+        }
+
+    }
+    
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML DOM</title>
+</head>
+<body>
+
+    <h1 id="koteret"></h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    <p id="p8"></p>
+    <p></p>
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    
+    <script>
+    document.getElementById("koteret").innerText = "welcome";
+    document.getElementById("p1").innerHTML = "lorem ipsum";
+    document.getElementById("p2").innerText = "Lorem ipsum dolor sit amet";
+    document.getElementById("p3").innerText = "lorem ipsum";
+    document.getElementById("p4").innerText = "lorem ipsum";
+    document.getElementById("p5").innerText = "lorem ipsum";
+    document.getElementById("p6").innerText = "lorem ipsum";
+    document.getElementById("p7").innerText = "lorem ipsum";
+    document.getElementById("p8").innerText = "lorem ipsum";
+
+    var pTags = document.getElementsByTagName("p");
+    console.log(pTags);
+
+    for (var index = 0 ; index < pTags.length ; index++) {
+
+        
+        pTags[index].innerText = " this his paragraph no:  " + (index + 1);
+        //document.getElementsByTagName("pTags").innerText = " this his paragraph no:  " + (index + 1);
+        
+    }
+
+    document.getElementsByTagName("p").style.color = "red";
+
+    
+    
+    </script>
+    
+</body>
+</html>

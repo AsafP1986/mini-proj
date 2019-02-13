@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>over 18?</title>
+</head>
+<body>
+    
+    <h1>please enter your age</h1>
+
+    <form action="http://www.ynet.co.il" onsubmit="return checkAge()">
+
+    <input type="number" id="age" /*oninput=checkAge()*/>
+    <input type="submit" /*onclick="checkAge()"*/ value="check if you are legit">
+
+    </form>
+    <p id="para"></p>
+
+    <script>
+    
+    function checkAge() {
+
+        var x = document.getElementById('age').value;
+        if (x < 0 || x > 120){
+
+            document.getElementById('para').innerHTML = "please enter a valid age";
+            document.getElementById('para').style.color = "red";
+            return false;
+
+        } else if (x >= 18){
+
+            document.getElementById('para').innerHTML = "you are legit";
+            document.getElementById('para').style.color = "green";
+            return true;
+
+        }else  {
+
+            document.getElementById('para').innerHTML = "you are under 18";
+            document.getElementById('para').style.color = "red";
+            return false;
+
+
+        }
+    }
+    
+    
+    
+    
+    </script>
+
+
+
+
+
+</body>
+</html>

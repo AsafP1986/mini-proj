@@ -1,0 +1,12 @@
+#outputpara {
+    border-style: solid ;
+     height: 100% ; 
+     font-size:500%;
+     padding: 20px;
+     margin: 10px;
+}
+
+#carusellContainer {
+    margin-top: 50px;
+    height: 10vh;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Targil 4</title>
+ד
+
+    var books = new Array ("רומן רוסי","יונה ונער","הדבר היה ככה","עשו","פונטנלה");
+    for (var i = 0 ; i < books.length ; i++) {
+        console.log(books[i]);
+    }
+
+    function checkList() {
+        var bookToCheck = document.getElementById('bookName').value ;
+        var bookWasFound = new Boolean(false);
+
+        console.log("start");
+        console.log(bookWasFound);
+        
+        for (var index = 0 ; index < books.length ; index++) {
+            if (bookToCheck == books[index]) {
+                bookWasFound = true ;
+            } 
+        }
+        switch (bookWasFound) {
+            case true:
+                document.getElementById('output').innerText ="הספר שחיפשת נמצא ברשימה";
+                document.getElementById('output').style.color = "green";
+                document.getElementById('output').style.fontSize = "30pt";
+                break;
+            default:
+                document.getElementById('output').innerText ="הספר שחיפשת לא נמצא ברשימה";
+                document.getElementById('output').style.color = "red";
+                document.getElementById('output').style.fontSize = "30pt";
+                break;
+        }     
+        console.log("end");
+    }
+
+
+</script>
+
+</body>
+</html>

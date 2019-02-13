@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Targil 3</title>
+</head>
+<body>
+
+    <h1 style="direction:rtl;"> קלוט משפט, חתוך אותו למילים השונות והצג את המשפט כשסדר המילים הפוך </h1>  
+            
+    <h2>please insert a full sentence</h2>
+    <input type="text" name="input1" id="sentence"><br><br>
+
+    <button id="disRevSen" onclick="displayreversSentence()">display your revers sentence</button>
+    <p id="output"></p>
+
+<script>
+
+    function displayreversSentence() {
+
+        var fullSent= document.getElementById('sentence').value;
+        var arrFullSent = fullSent.split(" ") ;
+        console.log(" 1. " + arrFullSent.length);
+        console.log("2. " + typeof arrFullSent);
+        
+       
+        var reversSent = arrFullSent.reverse();
+        var displaySent = reversSent.join(" ") ;
+        console.log(" 3. " + reversSent.length);
+        console.log(" 4. " + typeof arrFullSent);
+        
+        // for (var i = 0 ; i < reversSent.length ; i++) {
+        //     displaySent += reversSent[i] + " " ;
+        //     console.log(reversSent[i]);
+        // }
+        console.log(displaySent);
+
+
+        document.getElementById('output').innerText = displaySent;
+
+    }
+
+
+</script>
+
+</body>
+</html>

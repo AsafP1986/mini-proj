@@ -1,0 +1,26 @@
+#outputpara {
+    border-style: solid ;
+     height: 100% ; 
+     font-size:500%;
+     padding: 20px;
+     margin: 10px;
+}
+
+#carusellContainer {
+    margin-top: 50px;
+    height: 50%;
+    padding: px;
+
+}
+
+#carousel-inner {
+    height: 400px;
+}
+
+#upRow {
+    height: 500px;
+}
+
+.carousel-img {
+    height: 500px;
+}
