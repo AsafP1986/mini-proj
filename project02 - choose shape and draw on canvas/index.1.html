@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid border border-primary" style="margin-top: 50px">
+    <div class="row" style="padding: 10px">
+      <!-- start left side: input display & execution Btn-->
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <form id="myForm" action="" onsubmit="return false">
+          <div class="form-group" id="inputs">
+            <label for="usr" style="font-size: 28px"> the height:</label>
+            <input type="number" class="form-control" id="hig" min="0" required> </br>
+            <label for="usr" style="font-size: 28px"> the width:</label>
+            <input type="number" class="form-control" id="wid" min="0" required> </br>
+            <!--execution button-->
+            <button type="submit" class="btn btn-success btn-lg btn-block" id="myBtn" onclick="calculate()">press to
+              start calculation</button><br>
+              <h1 class="text-center" style="text-align:center" id="output"></h1>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+    <!-- end left side: input display & execution Btn-->
+    <!-- start right side: canvas-->
+    <div class="row" style="padding: 10px">
+      <!-- <h1 class="text-center" style="text-align:center" id="output"></h1> -->
+    </div>
+  </div>
+
+
+
+  <script src="js/myscripts1.js"></script>
+
+</body>
+
+
+</html>

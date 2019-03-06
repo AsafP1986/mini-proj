@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+   <!-- start devied to 2 container container-->
+  <div class="container-fluid border border-primary" style="margin-top: 50px">
+    <div class="row" style="padding: 10px">
+      <!-- start left side: input display & execution Btn-->
+      <div class="col-sm-6">
+        <form id="myForm" action="" onsubmit="return false">
+          <!--start circle display-->
+          <div class="form-group" id="circDisplay">
+            <label for="usr" style="font-size: 28px">enter a circle radius:</label>
+            <input type="number" class="form-control" id="circRad" min="0" required> </br>
+          </div>
+          <!--end circle display-->
+      
+        <!--execution button-->
+        <button type="submit" class="btn btn-success btn-lg btn-block" id="myBtn" onclick="drawOnCan()"
+          >press to
+          start drawing</button><br>
+          <h2 id="wrongInput" style="display: none ; color: red">your requested circle is too big</h2>
+        </form>
+      </div>
+       <!-- end left side: input display & execution Btn-->
+      <!-- start right side: canvas-->
+      <div class="col-sm-6">
+        <h1 class="text-center" id="output" >your circle:</h1>
+          <canvas id="mycanvas" width="484" height="300" style="border:10px solid #d3d3d3;" class="canvas-display-1"></canvas> </br>
+            <button type="button" class="btn btn-info btn-lg btn-block" id="refresh" onclick="refreshCan()"
+          >press to
+          refresh your canvas</button><br>
+      </div>
+      <!-- end right side: canvas-->
+    </div>
+  </div>
+   <!-- end devied to 2 container container-->
+
+  <script src="js/myscripts3.js"></script>
+
+</body>
+
+
+</html>

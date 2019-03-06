@@ -1,0 +1,48 @@
+body {
+
+        background-image: url('../images/backgroundImg.jpg');
+        background-repeat: repeat; 
+}
+
+h1 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: bold;
+        font-family: 'Rochester', cursive;
+
+}
+
+#headercontainer {
+
+        margin-top: 35px;
+}
+
+#newTaskForm {
+
+        margin-top: 35px;
+        background-image: url('../images/notebookbackground2.jpg');
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+}
+label {
+
+        color: black;
+        font-size: 28px;
+        font-weight: bold;
+        font-family: 'Rochester', cursive;
+}
+
+.card {
+        background-image: url('../images/notebookbackground2.jpg');
+        border-color: rgb(22, 21, 21);
+        width: 15rem;
+         
+}
+#taskboard{
+        margin-top: 35px;
+
+}

@@ -31,10 +31,7 @@ function importImg() {
     img.setAttribute("data-toggle", "modal");
     img.setAttribute("data-target", "#myModal");
     // data-toggle="modal" data-target="#myModal"
-    img.addEventListener("onclick" , sendSrcToModal(this.src));
-
-
-
+    
     document.getElementById("outputpara").appendChild(img);
     document.getElementById("modalInner").innerHTML= "<img  class='d-block w-100 carousel-img' src='" + imgURL + "'/>";
 
@@ -46,8 +43,15 @@ function importImg() {
     localStorage.setItem('imgPara', imgPara);
 
 }
+// <!--first jquery -->
+$("img").on('click' , function sendSrcToModal(imgSourcetomodal) {
+    var imgclickedon= $(imgSourcetomodal.relatedTarget);
+    document.getElementById('modalInnerImg').src = imgclickedon[0].src;
+    console.log(imgSourcetomodal);
+    // $("#modalInnerImg")
 
-sendSrcToModal(imgSourcetomodal)
+} ) ;
+
 
 function init() {
     document.getElementById('outputpara').innerHTML = localStorage.getItem('imgPara');
