@@ -2,13 +2,14 @@ body {
 
         background-image: url('../images/backgroundImg.jpg');
         background-repeat: repeat; 
+        font-family: 'Rochester', cursive;
 }
 
 h1 {
         text-align: center;
-        font-size: 45px;
+        font-size: 80px;
         font-weight: bold;
-        font-family: 'Rochester', cursive;
+        font-family: 'Old Standard TT';
 
 }
 
@@ -33,16 +34,63 @@ label {
         color: black;
         font-size: 28px;
         font-weight: bold;
-        font-family: 'Rochester', cursive;
+        
 }
 
-.card {
+.card{
         background-image: url('../images/notebookbackground2.jpg');
         border-color: rgb(22, 21, 21);
         width: 15rem;
+        height: 15rem;
+        margin: 5rem;
+        font-weight: bold;
+        
          
 }
-#taskboard{
-        margin-top: 35px;
+.card:hover .glyphicon-remove {display: block;}
 
+.card-title {
+        text-align: left ;
+        text-decoration: underline;
+        font-size: 35px;
 }
+.card-midlle {
+
+        background-color: transparent;
+        border-color: transparent;
+        width: 100%;
+        font-size: 28px;
+}
+
+.card-bottom {
+        
+        position: absolute;
+        bottom: 15px;
+        left: 16px;
+        font-size: 15px;
+} 
+
+#taskboard {
+        margin-top: 35px;
+}
+
+.glyphicon-remove {
+        display: none;
+        float: right;
+        padding-top: 3px;
+}
+
+
+
+@-webkit-keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+     }
+     
+     @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+     }
+     
+ 
+
