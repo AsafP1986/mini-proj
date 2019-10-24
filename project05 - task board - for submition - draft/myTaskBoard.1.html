@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>my task board</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/myTaskBoard.css">
+  <link  rel="stylesheet" href="css/glyphicons.css">
+  <!-- <link href="css/bootstrap-combined.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-datetimepicker.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body onload= "printToScreen()">
+  <!-- start header container -->
+  <div id="headercontainer" class="container-fluid">
+    <h1 class="text-center">my Task Board</h1>
+  </div>
+  <!-- end header container -->
+  <!-- start input container -->
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div id="newTaskForm" class="container col-sm-4">
+      <form id="usrform" onsubmit="createTask()">
+        <div class="form-group">
+          <label for="usr">What is your task?</label> 
+          <!-- <input type="text" class="form-control" id="inputTask" placeholder="type here..." required><br> -->
+          <textarea class="form-control" rows="2" id="theTask" name="theTask" form="usrform" required
+            placeholder="type here..."></textarea>
+        </div>
+
+        <!-- start date input container -->
+        <div class="form-group input-append" id="datepicker datetimepicker">
+          <label for="usr">When do you need it done?</label>
+          <input type="date" class="form-control" id="inputDate" name="the date" data-format="dd/MM/yyyy" required>
+          <span class="add-on">
+              <i data-date-icon="icon-calendar">
+              </i>
+            </span>
+        </div>
+         <!-- end date input container -->
+        <!-- start time input container -->
+        <div class="form-group input-append"  id="timepicker datetimepicker">
+          <label for="usr">Any specific time?</label>
+          <input type="time" data-format="hh:mm:ss" class="form-control" id="inputTime" name="the time">
+          <span class="add-on">
+                    <i data-time-icon="icon-time">
+                    </i>
+                  </span>
+        </div></br></br>
+        <!-- end time input container -->
+
+        <!-- start Btns -->
+        <div class="form-group">
+          <button type="reset" class="btn btn-danger btn-block">Erase what you've entered</button>
+          <button type="submit" class="btn btn-primary btn-block">Add the task</button>
+        </div>
+        <!-- end Btns -->
+      </form>
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+  <!-- end input container -->
+  <!-- start task container -->
+
+  <div class="container-fluid" id="taskboard">
+    <div class="row" id="taskBoardRow"></div> 
+  </div>
+  <!-- end task container -->
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.pt-HE.js"></script>
+  <script src="js/myTaskBoard.js"></script>
+  
+
+</body>
+
+</html>
+

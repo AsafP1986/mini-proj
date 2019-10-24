@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mivhan 01 - 021917968</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mycss.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body onload="init()">
+</br><h1 id="koteret">Mivhan 01 - 021917968. Peled Asaf</h1></br></br>
+  <!-- start devied to 2 container container-->
+  <div class="container-fluid border border-primary">
+    <div class="row" >
+      <!-- start left side: input display & execution Btn-->
+      <div class="col-sm-6">
+        <div class="form-group" id="circDisplay">
+          <label  id="firstlabel" for="usr" >Input radius value and get the volume of a sphere</label> <br>
+          <label>radius:</label> </br>
+          <input type="number" class="form-control" id="circRad" min="0" required> </br>
+          <label>volume:</label> </br>
+          <span id="circvolumoutput"></span> </br></br>
+          <button type="submit" class="btn btn-success btn-lg btn-block" id="myBtn" onclick="calculate()">calculate</button><br>
+        </div>
+      </div>
+      <!-- end left side: input display & execution Btn-->
+      <!-- start right side: canvas-->
+      <div class="col-sm-6">
+        <h1 class="text-center" id="output">Drawing on Canvas!</h1>
+        <div class="text-center">
+          <canvas id="mycanvas" width="300" height="300" style="border:10px solid #d3d3d3;"
+            class="canvas-display-1"></canvas> </br>
+        </div>
+        <button type="button" class="btn btn-info btn-lg btn-block" id="refresh" onclick="refreshCan()">clear</button><br>
+      </div>
+      <!-- end right side: canvas-->
+    </div>
+  </div>
+  <!-- end devied to 2 containers container-->
+
+  <script src="js/myscripts.js"></script>
+
+</body>
+
+</html>

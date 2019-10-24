@@ -1,0 +1,19 @@
+#koteret {
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#mycanvas {
+    width: 300;
+    height: 300; 
+    border:10px solid #d3d3d3;
+}
+
+.row {
+    padding: 10px;
+}
+
+#firstlabel {
+    font-size: 28px;
+}
